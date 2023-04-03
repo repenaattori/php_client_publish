@@ -56,7 +56,7 @@ function RegisterUser() {
           Password:
           <input {...register("pw")} type="password" />
         </label>
-        <button type="submit">OK</button>
+        <button type="submit">Register user</button>
       </form>
       <p>{msg}</p>
     </div>
@@ -87,7 +87,7 @@ function Messages() {
           Username:
           <input {...register("uname")} />
         </label>
-        <button type="submit">OK</button>
+        <button type="submit">Get messages</button>
       </form>
       <ul>
         {messages.map(element => <li>{element}</li>)}
